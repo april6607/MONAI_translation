@@ -21,7 +21,7 @@ MONAI는 [파이토치 생태계](https://pytorch.org/ecosystem/)의 일부인 �
 > _[기술 하이라이트](https://docs.monai.io/en/latest/highlights.html) 및 현재 마일스톤 릴리스의 [새로운 기능](https://docs.monai.io/en/latest/whatsnew.html)을 참조하십시오._
 
 - 다차원 의료 영상 데이터를 위한 유연한 전처리;
-- 기존 워크플로우에서 쉽게 통합될 수 있는 구성 및 휴대용 API;
+- 기존 워크플로우에서 쉽게 통합될 수 있는 구성 및 이식 가능한 API;
 - 네트워크, 손실, 평가 지표 등에 대한 도메인별 구현;
 - 다양한 사용자 전문지식을 위한 맞춤형 설계;
 - 다중 GPU 데이터 병렬화 지원.
