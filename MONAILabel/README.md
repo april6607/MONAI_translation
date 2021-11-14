@@ -31,7 +31,7 @@ MONAI Label은 **GPU/CUDA**가 가능한 다음 OS에서 지원합니다.
 
 [현재 릴리스](https://pypi.org/project/monailabel/)를 설치하려면 다음을 실행하면 됩니다.
 
-'''bash
+```bash
   pip install monailabel
   
   # 샘플 앱/데이터셋 다운로드
@@ -40,7 +40,7 @@ MONAI Label은 **GPU/CUDA**가 가능한 다음 OS에서 지원합니다.
   
   # 서버 실행
   monailabel start_server --app apps/deepedit --studies datasets/Task09_Spleen/imagesTr
-'''
+```
 
 > monailabel 설치 경로가 자동으로 결정되지 않으면 다음과 같이 명시적 설치 경로를 제공할 수 있습니다. 
 > 
@@ -48,27 +48,27 @@ MONAI Label은 **GPU/CUDA**가 가능한 다음 OS에서 지원합니다.
 
 **_전제조건_**, 기타 설치 방법(기본 GitHub branch 사용, Docker 사용 등)은 [설치 가이드](https://docs.monai.io/projects/label/en/latest/installation.html)을 참조하십시오.
 
-> 일단 MONAI Label Server를 시작하면, 기본적으로 서버는 http:///127.0.0.1:8000/ 에서 작동됩니다. 브라우저에서 서비스 URL을 열면 사용 가능한 Rest API 목록이 제공됩니다.
+> 일단 MONAI Label Server를 시작하면, 기본적으로 서버는 http:///127.0.0.1:8000/. 에서 작동됩니다. 브라우저에서 서비스 URL을 열면 사용 가능한 Rest API 목록이 제공됩니다.
 
 ### 3D 슬라이서
 
 https://download.slicer.org/ 에서 Preview Release를 다운로드하고 Slicer Extension Manager에서 MONAI Label 플러그인을 설치합니다.
 
 3D Slicer에서 MONAI Label 플러그인을 설치 및 실행하기 위한 다른 옵션은 [3D Slicer 플러그인](플러그인/슬라이서)을 참조하십시오.
-> 이전 버전의 Slicer를 실수로 사용하지 않으려면 이전에 설치한 3D Slicer 패키지를 _제거_하는 것이 좋습니다.
+> 이전 버전의 Slicer를 실수로 사용하지 않으려면 이전에 설치한 3D Slicer 패키지를 _제거_ 하는 것이 좋습니다.
 
 ### OHIF
 
 MONAI 레이블에는 [OHIF Viewer](https://github.com/OHIF/Viewers)용 [사전 빌드 플러그인](plugins/ohif)이 함께 제공됩니다.  OHIF Viewer를 사용하려면 서버를 시작할 때 FileSystem 대신 DICOMWeb을 _studies_로 제공해야 합니다.
-> OHIF Viewer를 사용하기 전에 [Orthanc](https://www.orthanc-server.com/download.php)을 설치하십시오. Ubuntu 20.x의 경우 Orthanc을 ‘apt-get install orthanc orthanc-dicomweb’으로 설치할 수 있습니다. 그러나 [여기](https://book.orthanc-server.com/users/debian-packages.html#replacing-the-package-from-the-service-by-the-lsb-binaries)에서 언급한 단계를 수행하여 **최신 버전으로 업그레이드**해야 합니다.
+> OHIF Viewer를 사용하기 전에 [Orthanc](https://www.orthanc-server.com/download.php)을 설치하십시오. Ubuntu 20.x의 경우 Orthanc을 `apt-get install orthanc orthanc-dicomweb`으로 설치할 수 있습니다. 그러나 [여기](https://book.orthanc-server.com/users/debian-packages.html#replacing-the-package-from-the-service-by-the-lsb-binaries)에서 언급한 단계를 수행하여 **최신 버전으로 업그레이드**해야 합니다.
 >
 > [PlastiMatch](https://plastimatch.org/plastimatch.html#plastimatch-convert)를 사용하여 NIFTI를 DICOM으로 변환할 수 있습니다.
 
-'''bash
+```bash
   # DICOMWeb을 사용하여 서버 시작
   monailabel start_server --app apps\deepedit --studies http://127.0.0.1:8042/dicom-web
-'''
-> OHIF 뷰어는 http://127.0.0.1:8000/ohif에서 액세스할 수 있습니다.
+```
+> OHIF 뷰어는 http://127.0.0.1:8000/ohif 에서 액세스할 수 있습니다.
 
 ![OHIF](https://raw.githubusercontent.com/Project-MONAI/MONAILabel/main/docs/images/ohif.png)
 
