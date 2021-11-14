@@ -76,7 +76,7 @@ MONAI 레이블에는 [OHIF Viewer](https://github.com/OHIF/Viewers)용 [사전 
 
 ## 기여
 
-MONAI 라벨에 대한 기여 지침은 [기여 지침](CONTRIBUTING.md) 를 참조하십시오.
+MONAI 라벨에 대한 기여 지침은 [기여 지침](CONTRIBUTING.md)을 참조하십시오.
 
 ## 커뮤니티
 트위터[@ProjectMONAI](https://twitter.com/ProjectMONAI)에서 대화에 참여하거나 [Slack 채널](https://forms.gle/QTxJq3hFictp31UM9)에 참여하십시오.
