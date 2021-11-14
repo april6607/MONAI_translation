@@ -40,6 +40,7 @@ python ./prepare_dataset.py
 ```
 
 [Deepgrow 2D Training](https://github.com/Project-MONAI/tutorials/blob/master/deepgrow/ignite/train.py)
+
 이 예는 표준 PyTorch 프로그램이며 사용자가 2D를 위해 사전 처리된 데이터 세트에 대한 교육을 실행할 수 있도록 도와줍니다.
 
 ```
@@ -70,6 +71,7 @@ python ./train.py
 ```
 
 [Deepgrow 2D Validation](https://github.com/Project-MONAI/tutorials/blob/master/deepgrow/ignite/validate.py)
+
 이 예는 표준 PyTorch 프로그램이며 사용자가 훈련된 2D 모델에 대한 평가를 실행할 수 있도록 도와줍니다.
 
 ```
@@ -83,9 +85,11 @@ python ./validate.py
 ```
     
 [Deepgrow 2D Inference](https://github.com/Project-MONAI/tutorials/blob/master/deepgrow/ignite/inference.ipynb)
+
 이 노트북은 Deepgrow 2D 모델에 대한 추론을 실행하기 전에 사전 변환을 실행하는 데 도움이 됩니다. 또한 변환 후 실행을 통해 최종 레이블 마스크를 얻을 수 있습니다.
 
 [Deepgrow 3D Training](https://github.com/Project-MONAI/tutorials/blob/master/deepgrow/ignite/train_3d.py)
+
 이것은 3D 훈련을 실행하기 위한 기본 인수를 재정의한 train.py의 연장선입니다.
 
 ```
@@ -116,6 +120,7 @@ python ./train_3d.py
 ```
     
 [Deepgrow 3D Validation](https://github.com/Project-MONAI/tutorials/blob/master/deepgrow/ignite/validate_3d.py)
+
 3D 유효성 검사를 실행하기 위한 기본 인수를 재정의하는 Validate.py의 확장입니다
 
 ```
@@ -129,8 +134,10 @@ python ./validate_3d.py
 ```
     
 [Deepgrow 3D Inference](https://github.com/Project-MONAI/tutorials/blob/master/deepgrow/ignite/inference_3d.ipynb)
+
 이 노트북은 Deepgrow 3D 모델에 대한 추론을 실행하기 전에 사전 변환을 실행하는 데 도움이 됩니다. 또한 변환 후 실행을 통해 최종 레이블 마스크를 얻을 수 있습니다.
 
 [Deepgrow Stats](https://github.com/Project-MONAI/tutorials/blob/master/deepgrow/ignite/handler.py)
+
 다중 레이블 마스크가 있는 데이터 집합에 대해 트레인/유효성 검사를 실행하는 동안 지역/기관별 통계를 캡처하고, 스냅샷을 저장하고, 출력을 저장할 수 있는 기본 Ignite 핸들러를 포함합니다. 기본적으로 처리기는 교육/유효성 검사 단계의 일부로 추가됩니다.
  
