@@ -44,11 +44,11 @@ MONAI Label은 **GPU/CUDA**가 가능한 다음 OS에서 지원합니다.
 
 > monailabel 설치 경로가 자동으로 결정되지 않으면 다음과 같이 명시적 설치 경로를 제공할 수 있습니다. 
 > 
-> 'monailabel apps --prefix ~/.local'
+> `monailabel apps --prefix ~/.local`
 
 **_전제조건_**, 기타 설치 방법(기본 GitHub branch 사용, Docker 사용 등)은 [설치 가이드](https://docs.monai.io/projects/label/en/latest/installation.html)을 참조하십시오.
 
-> 일단 MONAI Label Server를 시작하면, 기본적으로 서버는 http:///127.0.0.1:8000/. 에서 작동됩니다. 브라우저에서 서비스 URL을 열면 사용 가능한 Rest API 목록이 제공됩니다.
+> 일단 MONAI Label Server를 시작하면, 기본적으로 서버는 http://127.0.0.1:8000/. 에서 작동됩니다. 브라우저에서 서비스 URL을 열면 사용 가능한 Rest API 목록이 제공됩니다.
 
 ### 3D 슬라이서
 
